@@ -135,8 +135,8 @@ class Opponent(object):
 #     attacks=["虫", "恶", "超"]
 # )
 op1 = Opponent(
-    attributes=["龙", "地"],
-    attacks=["龙", "地", "斗", "无"]
+    attributes=["斗", "钢"],
+    attacks=["斗", "龙", "超", "地"]
 )
 op1.get_score()
 
