@@ -122,6 +122,7 @@ class Opponent(object):
                 for attack_from in self.attacks:
                     score1 = single_coefficient(attack_from, attack_to_1, a_from_attributes=self.attributes)
                     score2 = single_coefficient(attack_from, attack_to_2, a_from_attributes=self.attributes)
+                    # print(f"{all_attributes[attack_to_1]}={score1}, {all_attributes[attack_to_2]}={score2}")
                     score = max(score, score1 * score2)
                 res_row.append(score)
             res_double.append(res_row)
@@ -135,7 +136,7 @@ class Opponent(object):
 # )
 op1 = Opponent(
     attributes=["龙", "地"],
-    attacks=["龙", "地", "斗"]
+    attacks=["龙", "地", "斗", "无"]
 )
 op1.get_score()
 
